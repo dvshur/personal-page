@@ -1,0 +1,64 @@
+.header__background {
+  height: 900px;
+  background-image: url(../img/background_image.jpg);
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.header__first-row {
+  font-family: var(--font-primary);
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.header__heading {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+}
+
+.header__heading-element {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.header__menu {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.header__menu-element {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.header__menu-element:hover {
+  color: grey;
+  font-size: 36px;
+  margin-left: 26px;
+}
+
+.header__menu-element:active {
+  color: black;
+}
+
+.header__button {
+  font-family: var(--font-primary);
+  font-style: normal;
+  padding: 21px 21px;
+  margin-top: 460px;
+  color: black;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.header__button:hover {
+  background-color: #cfcfcf;
+  box-shadow: none;
+}
+
+.header__button:active {
+  background-color: #747474;
+  box-shadow: none;
+  color: white;
+}

@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>Скрипка на праздник</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -13,24 +18,52 @@
         <section class="container">
           <div class="header__first-row">
             <div class="row">
-              <div class="col-4">
-                <h1 class="header__heading">Нелли Гайфуллина Скрипка</h1>
+              <div class="col-3">
+                <h1 class="header__heading">
+                  Нелли Гайфуллина
+                  <span class="header__heading-element">Скрипка</span>
+                </h1>
               </div>
-              <div class="col-8">
+              <div class="col-9">
                 <nav class="header__menu">
-                    <a class="header__menu-element">Главная</a>
-                    <a class="header__menu-element">Обо мне</a>
-                    <a class="header__menu-element">Фото</a>
-                    <a class="header__menu-element">Видео</a>
-                    <a class="header__menu-element">Контакты</a>
-                  </nav>
+                  <a class="header__menu-element">Главная</a>
+                  <a class="header__menu-element">Обо мне</a>
+                  <a class="header__menu-element">Фото</a>
+                  <a class="header__menu-element">Видео</a>
+                  <a class="header__menu-element">Контакты</a>
+                </nav>
               </div>
             </div>
           </div>
+          <button class="header__button">Заказать выступление</button>
         </section>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col-6">
+              <div class="main__introduction-img-position">
+                <img
+                  class="main__introduction-img"
+                  src="../nelly_gaifullina/img/about_me.jpg"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="main__introduction-text-position">
+                <p class="main__introduction-text">
+                  Привет! Меня зовут Нелли и я играю на скрипке с 4-х лет.
+                  Обучаю детей и взрослых, выступаю на праздниках. Буду рада с
+                  вами сотрудничать!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

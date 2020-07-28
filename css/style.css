@@ -1,58 +1,9 @@
-/* FONTS */
-
-/* raleway-regular - latin_cyrillic */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("../fonts/raleway-v17-latin_cyrillic-regular.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/raleway-v17-latin_cyrillic-regular.woff") format("woff"); /* Modern Browsers */
-}
-
-/* raleway-800 - latin_cyrillic */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  src: local(""),
-    url("../fonts/raleway-v17-latin_cyrillic-800.woff2") format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/raleway-v17-latin_cyrillic-800.woff") format("woff"); /* Modern Browsers */
-}
-
-/* playfair-display-regular - latin_cyrillic */
-@font-face {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/playfair-display-v21-latin_cyrillic-regular.woff")
-      format("woff"); /* Modern Browsers */
-}
-
-/* playfair-display-900 - latin_cyrillic */
-@font-face {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 900;
-  src: local(""),
-    url("../fonts/playfair-display-v21-latin_cyrillic-900.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */
-      url("../fonts/playfair-display-v21-latin_cyrillic-900.woff")
-      format("woff"); /* Modern Browsers */
-}
-
 :root {
-  --font-primary: Raleway, Arial, sans-serif;
-  --font-secondary: Playfair Display, Times New Roman, serif;
-
+  --font-primary: Yanone Kaffeesatz, Arial, sans-serif;
+  --font-secondary: Lato, Arial, sans-serif;
   --text-color: #fafafa;
+
+  --background: #D7D2D2;
 }
 
 /* grid  */
@@ -100,43 +51,27 @@
   width: calc(16.66666% - 20px);
   margin: 0 10px;
 }
+
 /* STYLES */
-a {
-  cursor: pointer;
+
+body {
+  color: var(--text-color);
 }
+
+a,
+button,
+button:focus,
+button:active {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
 .container {
   width: 1300px;
   margin: 0 auto;
 }
 
-.header__background {
-  height: 900px;
-  background-image: url(../img/background_image.jpg);
-  background-size: cover;
-  opacity: 0.8;
-}
-
-.header__first-row {
-  font-family: var(--font-primary);
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--text-color);
-}
-.header__heading {
-  font-size: 30px;
-  border-top: 3px solid var(--text-color);
-  border-bottom: 3px solid var(--text-color);
-  text-align: center;
-  padding: 10px;
-}
-
-.header__menu {
-  text-align: right;
-  margin-top: 20px;
-}
-
-.header__menu-element {
-  font-size: 16px;
-  font-weight: bold;
-  margin-left: 20px;
+.wrapper {
+  margin: 60px 0;
 }
