@@ -15,6 +15,7 @@
   font-size: 36px;
   text-align: center;
   padding: 20px;
+  color: white;
 }
 
 .header__heading-element {
@@ -30,6 +31,7 @@
 .header__menu-element {
   font-size: 30px;
   margin-left: 20px;
+  color: white;
 }
 
 .header__menu-element:hover {
@@ -47,7 +49,6 @@
   font-style: normal;
   padding: 21px 21px;
   margin-top: 460px;
-  color: black;
   text-transform: uppercase;
   box-sizing: border-box;
 }

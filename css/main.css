@@ -1,21 +1,25 @@
 .main__introduction-img-position {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .main__introduction-img {
-    width: 300px;
-    border-radius: 50%;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .main__introduction-text-position {
-     display: flex;
-     height: 100%;
-     align-items: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
-.main__introduction-text {
-    color: black;
-    font-family: var(--font-secondary);
-    line-height: 36px;
-    font-size: 20px;
+
+.skills__heading {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.skills__icon {
+  padding-left: 20px;
 }
