@@ -65,14 +65,14 @@ button:active {
   outline: none;
 }
 
-.text {
+body {
   font-family: var(--font-secondary);
   line-height: 36px;
   font-size: 20px;
 }
 
 .container {
-  width: 1300px;
+  width: 1200px;
   margin: 0 auto;
 }
 

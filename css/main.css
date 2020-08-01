@@ -14,6 +14,17 @@
   align-items: center;
 }
 
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skils-part {
+  max-width: calc(41.66666% - 20px);
+  margin-bottom: 40px;
+}
+
 .skills__heading {
   font-family: var(--font-primary);
   font-size: 38px;
