@@ -34,3 +34,45 @@
 .skills__icon {
   padding-left: 20px;
 }
+
+.photo {
+  background-color: #f3f3f3;
+}
+
+.photo-cart {
+  background-color: white;
+  box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
+  border-radius: 3px;
+  width: calc(50% - 20px);
+}
+
+.photo-cart:hover {
+  box-shadow: 6px 6px 12px 6px rgba(30, 45, 62, 0.2);
+}
+
+.photo__heading {
+  font-family: var(--font-primary);
+  font-size: 56px;
+  font-weight: normal;
+  padding: 70px 0;
+}
+
+.photo-part-heading {
+  font-family: var(--font-primary);
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+.photo__desc {
+  padding: 10px;
+}
+
+.photo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
