@@ -44,6 +44,7 @@
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
   width: calc(50% - 20px);
+  margin-bottom: 50px;
 }
 
 .photo-cart:hover {
@@ -68,7 +69,7 @@
 }
 
 .photo__desc {
-  padding: 10px;
+  padding: 30px;
 }
 
 .photo-flex {
