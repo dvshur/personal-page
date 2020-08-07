@@ -1,17 +1,42 @@
-.main__introduction-img-position {
+.introduction__img-position {
   display: flex;
   justify-content: space-around;
 }
 
-.main__introduction-img {
+.introduction__img {
   width: 300px;
   border-radius: 50%;
 }
 
-.main__introduction-text-position {
+.introduction__text-position {
   display: flex;
-  height: 100%;
   align-items: center;
+}
+
+.introduction__heading {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.introduction__button {
+  font-family: var(--font-primary);
+  font-style: normal;
+  padding: 21px 21px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color: black;
+  margin-top: 30px;
+}
+
+.introduction__button:hover {
+  background-color: grey;
+}
+
+.introduction__button:active {
+  background-color: var(--grey);
 }
 
 .skills {
@@ -22,32 +47,41 @@
 
 .skils-part {
   max-width: calc(41.66666% - 20px);
-  margin-bottom: 40px;
+  margin-bottom: 75px;
 }
 
 .skills__heading {
   font-family: var(--font-primary);
   font-size: 38px;
   font-weight: normal;
+  padding-bottom: 17px;
 }
 
 .skills__icon {
-  padding-left: 20px;
+  padding-left: 5px;
+  padding-bottom: 10px;
 }
 
 .photo {
   background-color: #f3f3f3;
 }
 
-.photo-cart {
+.photo-card {
+  display: block;
   background-color: white;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
-  width: calc(50% - 20px);
+  width: calc(33.33333% - 20px);
   margin-bottom: 50px;
 }
 
-.photo-cart:hover {
+.photo__container {
+  width: 100%;
+  height: 0;
+  padding-top: 257px;
+}
+
+.photo-card:hover {
   box-shadow: 6px 6px 12px 6px rgba(30, 45, 62, 0.2);
 }
 
@@ -55,17 +89,48 @@
   font-family: var(--font-primary);
   font-size: 56px;
   font-weight: normal;
-  padding: 70px 0;
+  padding-top: 79px;
+  padding-bottom: 40px;
 }
 
 .photo-part-heading {
   font-family: var(--font-primary);
   font-size: 30px;
   font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
-.photo__img {
-  width: 100%;
+.photo1 {
+  background: url("../img/arbat.jpg") no-repeat;
+  background-size: contain;
+}
+
+.photo2 {
+  background: url("../img/orchestra.jpg") no-repeat;
+  background-size: contain;
+}
+
+.photo3 {
+  background: url("../img/little.JPG") no-repeat;
+  background-size: contain;
+}
+
+.photo4 {
+  background: url("../img/violin-meeting.jpg") no-repeat;
+  background-size: contain;
+}
+
+.photo5 {
+  background: url("../img/red2.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 39%;
+}
+
+.photo6 {
+  background: url("../img/lesson.jpg") no-repeat;
+  background-size: cover;
+  background-position: 10% 26%;
 }
 
 .photo__desc {
@@ -88,6 +153,10 @@
   background-image: linear-gradient(-133deg, #7282eb, #74aee3);
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+.photo__p {
+  line-height: 25px;
 }
 
 .gallery {

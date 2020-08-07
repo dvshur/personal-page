@@ -29,15 +29,15 @@
 }
 
 .header__menu-element {
+  display: inline-block;
   font-size: 30px;
-  margin-left: 20px;
+  padding-left: 20px;
   color: white;
 }
 
 .header__menu-element:hover {
   color: grey;
-  font-size: 36px;
-  margin-left: 26px;
+  transform: scale(1.2);
 }
 
 .header__menu-element:active {

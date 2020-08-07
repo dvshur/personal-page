@@ -71,12 +71,14 @@ button:active {
   cursor: pointer;
   border: none;
   outline: none;
+  text-decoration: none;
 }
 
 body {
   font-family: var(--font-secondary);
   line-height: 36px;
   font-size: 20px;
+  line-height: 36px;
 }
 
 .container {

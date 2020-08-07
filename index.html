@@ -7,6 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="css/reset.css" rel="stylesheet" />
+
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
@@ -29,8 +31,10 @@
               <div class="col-9">
                 <nav class="header__menu">
                   <a class="header__menu-element">Главная</a>
-                  <a class="header__menu-element">Обо мне</a>
-                  <a class="header__menu-element">Фото</a>
+                  <a class="header__menu-element" href="#section-about-me"
+                    >Обо мне</a
+                  >
+                  <a class="header__menu-element" href="#section-photo">Фото</a>
                   <a class="header__menu-element">Видео</a>
                   <a class="header__menu-element">Контакты</a>
                 </nav>
@@ -46,28 +50,30 @@
         <div class="section">
           <div class="row">
             <div class="col-6">
-              <div class="main__introduction-img-position">
+              <div class="introduction__img-position">
                 <img
-                  class="main__introduction-img"
+                  class="introduction__img"
                   src="../personal_page/img/about_me.jpg"
                 />
               </div>
             </div>
             <div class="col-6">
-              <div class="main__introduction-text-position">
+              <h2 class="introduction__heading">Привет!</h2>
+              <div class="introduction__text-position" id="section-about-me">
                 <p>
-                  Привет! Меня зовут Нелли и я играю на скрипке с 4-х лет. Веду
+                  Меня зовут Нелли, и я играю на скрипке с 4-х лет. Веду
                   активную концертную деятельность. Являюсь лауреатом
-                  международных конкурсов России, Испании, Германии. В составе
-                  оркестра РНМСО играла под управлением Федосеева, Гергиева,
-                  Сладковского, Спинози, выступала с Денисом Матцуевым, Борисом
-                  Березовским, Юлией Лежневой и со многими другими выдающимися
-                  музыкантами и дирижёрами. Была соучредителем и методистом в
-                  музыкальной мастерской для детей с ограниченными возможностями
-                  "Филин". Я обожаю свое дело, потому что делаю людей немного
-                  счастливее.
+                  международных конкурсов России, Испании, Германии.В составе
+                  оркестра РНМСО Выступала с Денисом Матцуевым, Борисом
+                  Березовским, Юлией Лежневой, Яной Иваниловой, а также группой
+                  Górky Park, группой Город 312, Дмитрием Певцовым, Вадимом
+                  Эйленкригом и со многими другими выдающимися музыкантами Была
+                  соучредителем и методистом в музыкальной мастерской для детей
+                  с ограниченными возможностями "Филин". Я обожаю свое дело,
+                  потому что делаю людей немного счастливее.
                 </p>
               </div>
+              <button class="introduction__button">Связаться со мной</button>
             </div>
           </div>
         </div>
@@ -79,8 +85,8 @@
               <object
                 class="skills__icon"
                 data="/Users/nellie/projects/personal_page/img/svg/gift.svg"
-                width="40"
-                height="40"
+                width="50"
+                height="50"
               ></object>
               <h3 class="skills__heading">
                 Музыкальное сопровождение вашего праздника
@@ -94,9 +100,9 @@
             <div class="skils-part">
               <object
                 class="skills__icon"
-                data="/Users/nellie/projects/personal_page/img/svg/orchestra.svg"
-                width="40"
-                height="40"
+                data="/Users/nellie/projects/personal_page/img/svg/violin.svg"
+                width="50"
+                height="50"
               ></object>
               <h3 class="skills__heading">Обучение с нуля</h3>
               <p>
@@ -109,9 +115,9 @@
             <div class="skils-part">
               <object
                 class="skills__icon"
-                data="/Users/nellie/projects/personal_page/img/svg/friendship.svg"
-                width="40"
-                height="40"
+                data="/Users/nellie/projects/personal_page/img/svg/children.svg"
+                width="50"
+                height="50"
               ></object>
               <h3 class="skills__heading">Сказка для детей</h3>
               <p>
@@ -123,8 +129,8 @@
               <object
                 class="skills__icon"
                 data="/Users/nellie/projects/personal_page/img/svg/autism.svg"
-                width="40"
-                height="40"
+                width="50"
+                height="50"
               ></object>
               <h3 class="skills__heading">
                 Обучение детей с особенностями развития
@@ -140,53 +146,75 @@
         </div>
       </div>
 
-      <div class="photo">
+      <div class="photo" id="section-photo">
         <div class="container">
           <h2 class="photo__heading">Фото</h2>
           <div class="photo-flex">
-            <div class="photo-cart">
-              <img class="photo__img" src="../personal_page/img/arbat.jpg" />
+            <div class="photo-card">
+              <div class="photo__container photo1"></div>
               <div class="photo__desc">
                 <h4 class="photo-part-heading">Выступление в составе дуэта</h4>
-                <p>
-                  Вы можете уточнить о возжности выступления любого состава
+                <p class="photo__p">
+                  Вы можете уточнить о возможности выступления любого состава
                   артистов
                 </p>
               </div>
             </div>
-            <div class="photo-cart">
-              <img
-                class="photo__img"
-                src="../personal_page/img/orchestra.jpg"
-              />
+            <div class="photo-card">
+              <div class="photo__container photo2"></div>
+
               <div class="photo__desc">
                 <h4 class="photo-part-heading">
                   Выступление в составе ансамбля
                 </h4>
-                <p>Играю не только современную, но и классическую музыку</p>
+                <p class="photo__p">
+                  Играю не только современную, но и классическую музыку
+                </p>
               </div>
             </div>
-            <div class="photo-cart">
-              <img class="photo__img" src="../personal_page/img/little.JPG" />
+
+            <div class="photo-card">
+              <div class="photo__container photo3"></div>
               <div class="photo__desc">
                 <h4 class="photo-part-heading">Для самых маленьких</h4>
-                <p>Какое счастье играть для таких крох!</p>
+                <p class="photo__p">Какое счастье играть для таких крох!</p>
               </div>
             </div>
-            <div class="photo-cart">
-              <img
-                class="photo__img"
-                src="../personal_page/img/violin-meeting.jpg"
-              />
+            <div class="photo-card">
+              <div class="photo__container photo4"></div>
+
               <div class="photo__desc">
                 <h4 class="photo-part-heading">
                   Первое знакомство с инструментом
                 </h4>
-                <p>Самое интересное - самому попробовать!</p>
+                <p class="photo__p">Самое интересное - самому попробовать!</p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <div class="photo__container photo5"></div>
+              <div class="photo__desc">
+                <h4 class="photo-part-heading">
+                  Классическая или электро скрипка
+                </h4>
+                <p class="photo__p">
+                  Вы можете уточнить, какую скрипку хотите слышать на своем
+                  мероприятии
+                </p>
+              </div>
+            </div>
+
+            <div class="photo-card">
+              <div class="photo__container photo6"></div>
+              <div class="photo__desc">
+                <h4 class="photo-part-heading">
+                  Подготовка к домашнему концерту
+                </h4>
+                <p class="photo__p">
+                  Концентрация внимания артиста запредельная :)
+                </p>
               </div>
             </div>
           </div>
-
           <a href="#" class="photo__button">Смотреть все</a>
         </div>
       </div>
@@ -199,7 +227,12 @@
         <p class="footer__p">Я открыта к любым Вашим предложениям!</p>
       </div>
       <div class="section2">
-        <a class="socials" href="#">
+        <a
+          class="socials"
+          href="https://www.facebook.com/profile.php?id=100010643256122"
+          target="_blank"
+        >
+          <span class="hidden">Facebook</span>
           <svg viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z
@@ -208,7 +241,12 @@
             />
           </svg>
         </a>
-        <a class="socials" href="#">
+        <a
+          class="socials"
+          href="https://www.instagram.com/nelligaifullina/"
+          target="_blank"
+        >
+          <span class="hidden">Instagram</span>
           <svg viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
             <g>
               <ellipse cx="48.944" cy="48.719" rx="14.465" ry="14.017" />
@@ -229,7 +267,8 @@
             </g>
           </svg>
         </a>
-        <a class="socials" href="#">
+        <a class="socials" href="https://vk.com/nellie.gaif" target="_blank">
+          <span class="hidden">Vkontakte</span>
           <svg viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
@@ -250,9 +289,9 @@
         </a>
       </div>
       <div class="section3">
-        <p class="section3__p">© ngaifullina 2020 Все права защищены</p>
+        <p class="section3__p"><span>❤</span> By Nelly Gaifullina</p>
       </div>
-      <div>
+      <div class="hidden">
         Icons made by
         <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from
         <a href="https://www.flaticon.com/" title="Flaticon"
