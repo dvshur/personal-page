@@ -39,14 +39,7 @@
   background-color: var(--grey);
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.skils-part {
-  max-width: calc(41.66666% - 20px);
+.skills-part {
   margin-bottom: 75px;
 }
 
