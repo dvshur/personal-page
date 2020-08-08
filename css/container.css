@@ -1,15 +1,16 @@
 .container {
-  width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 800px) {
   .container {
     width: 800px;
+    /* margin: 0 calc(800px / 100 * 8); */
   }
 }
 @media (min-width: 1280px) {
   .container {
     width: 1280px;
+    /* margin: 0 calc(1200px / 100 * 12); */
   }
 }

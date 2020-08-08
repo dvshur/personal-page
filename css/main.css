@@ -40,10 +40,19 @@
 }
 
 .skills-part {
+  max-width: 500px;
   margin-bottom: 75px;
 }
 
 .skills__heading {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+  padding-bottom: 37px;
+  text-transform: uppercase;
+}
+
+.skills__heading_section {
   font-family: var(--font-primary);
   font-size: 38px;
   font-weight: normal;
@@ -64,7 +73,6 @@
   background-color: white;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
-  width: calc(33.33333% - 20px);
   margin-bottom: 50px;
 }
 
@@ -127,13 +135,8 @@
 }
 
 .photo__desc {
-  padding: 30px;
-}
-
-.photo-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 40px 30px 5px 30px;
+  min-height: 155px;
 }
 
 .photo__button {

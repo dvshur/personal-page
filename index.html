@@ -10,12 +10,12 @@
     <link href="css/reset.css" rel="stylesheet" />
 
     <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/container.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
-    <link href="css/grid.css" rel="stylesheet" />
-    <link href="css/container.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -24,13 +24,13 @@
         <section class="container">
           <div class="header__first-row">
             <div class="row">
-              <div class="col-3">
+              <div class="col-m-3">
                 <h1 class="header__heading">
                   Нелли Гайфуллина
                   <span class="header__heading-element">Скрипка</span>
                 </h1>
               </div>
-              <div class="col-9">
+              <div class="col-m-9">
                 <nav class="header__menu">
                   <a class="header__menu-element">Главная</a>
                   <a class="header__menu-element" href="#section-about-me"
@@ -51,7 +51,7 @@
       <div class="container">
         <div class="section">
           <div class="row">
-            <div class="col-6 col-s-12">
+            <div class="col-s-12 col-m-6">
               <div class="introduction__img-position">
                 <img
                   class="introduction__img"
@@ -59,7 +59,7 @@
                 />
               </div>
             </div>
-            <div class="col-6 col-s-12">
+            <div class="col-s-12 col-m-6">
               <h2 class="introduction__heading">Привет!</h2>
               <div class="introduction__text-position" id="section-about-me">
                 <p>
@@ -82,8 +82,9 @@
         <!-- skills section -->
 
         <div class="section">
+          <h2 class="skills__heading">Что я могу предложить:</h2>
           <div class="row row_space-between">
-            <div class="col-s-12 col-m-6 col-l-4">
+            <div class="col-s-12 col-m-6">
               <div class="skills-part">
                 <object
                   class="skills__icon"
@@ -91,7 +92,7 @@
                   width="50"
                   height="50"
                 ></object>
-                <h3 class="skills__heading">
+                <h3 class="skills__heading_section">
                   Музыкальное сопровождение вашего праздника
                 </h3>
                 <p>
@@ -109,7 +110,7 @@
                   width="50"
                   height="50"
                 ></object>
-                <h3 class="skills__heading">Обучение с нуля</h3>
+                <h3 class="skills__heading_section">Обучение с нуля</h3>
                 <p>
                   Считаю, что любое обучение должно проходить только с
                   позитивом. С детьми этому помогает игровая форма, а со
@@ -126,7 +127,7 @@
                   width="50"
                   height="50"
                 ></object>
-                <h3 class="skills__heading">Сказка для детей</h3>
+                <h3 class="skills__heading_section">Сказка для детей</h3>
                 <p>
                   Интерактивная сказка-концерт для детей с возможностью поиграть
                   на музыкальных инструментах (скрипке, блокфлейте, шумовых).
@@ -141,7 +142,7 @@
                   width="50"
                   height="50"
                 ></object>
-                <h3 class="skills__heading">
+                <h3 class="skills__heading_section">
                   Обучение детей с особенностями развития
                 </h3>
                 <p>
@@ -159,69 +160,83 @@
       <div class="photo" id="section-photo">
         <div class="container">
           <h2 class="photo__heading">Фото</h2>
-          <div class="photo-flex">
-            <div class="photo-card">
-              <div class="photo__container photo1"></div>
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">Выступление в составе дуэта</h4>
-                <p class="photo__p">
-                  Вы можете уточнить о возможности выступления любого состава
-                  артистов
-                </p>
+          <div class="row row_space-between">
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo1"></div>
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">
+                    Выступление в составе дуэта
+                  </h4>
+                  <p class="photo__p">
+                    Вы можете уточнить о возможности выступления любого состава
+                    артистов
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="photo-card">
-              <div class="photo__container photo2"></div>
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo2"></div>
 
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">
-                  Выступление в составе ансамбля
-                </h4>
-                <p class="photo__p">
-                  Играю не только современную, но и классическую музыку
-                </p>
-              </div>
-            </div>
-
-            <div class="photo-card">
-              <div class="photo__container photo3"></div>
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">Для самых маленьких</h4>
-                <p class="photo__p">Какое счастье играть для таких крох!</p>
-              </div>
-            </div>
-            <div class="photo-card">
-              <div class="photo__container photo4"></div>
-
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">
-                  Первое знакомство с инструментом
-                </h4>
-                <p class="photo__p">Самое интересное - самому попробовать!</p>
-              </div>
-            </div>
-            <div class="photo-card">
-              <div class="photo__container photo5"></div>
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">
-                  Классическая или электро скрипка
-                </h4>
-                <p class="photo__p">
-                  Вы можете уточнить, какую скрипку хотите слышать на своем
-                  мероприятии
-                </p>
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">
+                    Выступление в составе ансамбля
+                  </h4>
+                  <p class="photo__p">
+                    Играю не только современную, но и классическую музыку
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="photo-card">
-              <div class="photo__container photo6"></div>
-              <div class="photo__desc">
-                <h4 class="photo-part-heading">
-                  Подготовка к домашнему концерту
-                </h4>
-                <p class="photo__p">
-                  Концентрация внимания артиста запредельная :)
-                </p>
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo3"></div>
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">Для самых маленьких</h4>
+                  <p class="photo__p">Какое счастье играть для таких крох!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo4"></div>
+
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">
+                    Первое знакомство с инструментом
+                  </h4>
+                  <p class="photo__p">Самое интересное - самому попробовать!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo5"></div>
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">
+                    Классическая или электро скрипка
+                  </h4>
+                  <p class="photo__p">
+                    Вы можете уточнить, какую скрипку хотите слышать на своем
+                    мероприятии
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-l-4 col-m-6 col-s-12">
+              <div class="photo-card">
+                <div class="photo__container photo6"></div>
+                <div class="photo__desc">
+                  <h4 class="photo-part-heading">
+                    Подготовка к домашнему концерту
+                  </h4>
+                  <p class="photo__p">
+                    Концентрация внимания артиста запредельная :)
+                  </p>
+                </div>
               </div>
             </div>
           </div>

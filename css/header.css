@@ -1,7 +1,8 @@
 .header__background {
+  width: 100%;
   height: 900px;
-  background-image: url(../img/background_image.jpg);
-  background-size: cover;
+  background: url("../img/background_image.jpg") no-repeat;
+  background-size: contain;
   opacity: 0.9;
 }
 
@@ -26,6 +27,7 @@
 .header__menu {
   text-align: right;
   margin-top: 40px;
+  margin-right: 10px;
 }
 
 .header__menu-element {
