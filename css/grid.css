@@ -12,6 +12,10 @@
   justify-content: space-around;
 }
 
+.row_direction {
+  flex-direction: column;
+}
+
 .col-s-12 {
   width: calc(100% - 20px);
   margin: 0 10px;

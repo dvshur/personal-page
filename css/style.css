@@ -10,16 +10,6 @@
   --icon: #9b88c1;
 }
 
-/* grid  */
-
-.col-3 img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* STYLES */
-
 a,
 button,
 button:focus,
