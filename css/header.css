@@ -1,4 +1,5 @@
 .header__background {
+  position: relative;
   width: 100%;
   height: 900px;
   background: url("../img/background_image.jpg") no-repeat;
@@ -14,7 +15,6 @@
 
 .header__heading {
   font-size: 36px;
-  text-align: center;
   padding: 20px;
   color: white;
 }
@@ -39,14 +39,8 @@
   will-change: transform;
 }
 
-/* .header__menu-element:not(:hover) {
-  transition: transform 0.2s linear;
-} */
-
 .header__menu-element:hover {
-  /* color: grey; */
   transform: scale(1.5);
-  /* transition: 0.7s linear; */
 }
 
 .header__menu-element:active {
@@ -54,21 +48,49 @@
 }
 
 .header__button {
+  position: absolute;
+  z-index: 1;
   font-family: var(--font-primary);
   font-style: normal;
+  font-size: 20px;
   padding: 21px 21px;
-  margin-top: 460px;
   text-transform: uppercase;
+  content: "";
+  bottom: 20%;
   box-sizing: border-box;
 }
 
-.header__button:hover {
-  background-color: #cfcfcf;
-  box-shadow: none;
+.header__button:active {
+  color: white;
+}
+.header__button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background-color: lightgrey;
 }
 
-.header__button:active {
-  background-color: #747474;
+.header__button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: background-color 1s ease-out;
+  will-change: background-color;
+}
+
+.header__button:hover::before {
+  background-color: grey;
+}
+
+.header__button:active::before {
   box-shadow: none;
-  color: white;
+  background-color: var(--grey);
 }
