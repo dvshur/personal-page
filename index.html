@@ -13,7 +13,10 @@
     <link href="css/grid.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/introduction.css" rel="stylesheet" />
+    <link href="css/skills.css" rel="stylesheet" />
+    <link href="css/photo.css" rel="stylesheet" />
+
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/gallery.css" rel="stylesheet" />
   </head>
@@ -21,16 +24,20 @@
   <body>
     <header>
       <div class="header__background">
-        <section class="container">
+        <section class="container header__wrapper">
           <div class="header__first-row">
             <div class="row">
-              <div class="col-m-4">
+              <div class="col-l-4">
                 <h1 class="header__heading">
                   Нелли Гайфуллина
                   <div class="header__heading-element">Скрипка</div>
                 </h1>
+                <a class="header__phone" href="tel:+78125550555"
+                  >+7 (812) 555-05-55</a
+                >
               </div>
-              <div class="col-m-8">
+
+              <div class="col-l-8">
                 <nav class="header__menu">
                   <a class="header__menu-element">Главная</a>
                   <a class="header__menu-element" href="#section-about-me"
@@ -38,26 +45,28 @@
                   >
                   <a class="header__menu-element" href="#section-photo">Фото</a>
                   <a class="header__menu-element">Видео</a>
-                  <a class="header__menu-element">Контакты</a>
+                  <a class="header__menu-element" href="#section-contacts"
+                    >Контакты</a
+                  >
                 </nav>
               </div>
             </div>
           </div>
-          <button class="header__button">Заказать выступление</button>
+          <button class="button header__button">Заказать выступление</button>
         </section>
       </div>
     </header>
     <main>
       <div class="container">
         <div class="introduction__container">
-          <div class="row row_space-between">
-            <div class="col-s-12 col-m-4">
+          <div class="row">
+            <div class="col-m-12 col-l-4">
               <img
                 class="introduction__img"
                 src="../personal_page/img/about_me.jpg"
               />
             </div>
-            <div class="col-s-12 col-m-8">
+            <div class="col-m-12 col-l-8">
               <h2 class="introduction__heading">Привет!</h2>
               <div class="introduction__text-position" id="section-about-me">
                 <p>
@@ -73,7 +82,9 @@
                   счастливее.
                 </p>
               </div>
-              <button class="introduction__button">Связаться со мной</button>
+              <button class="button introduction__button">
+                Связаться со мной
+              </button>
             </div>
           </div>
         </div>
@@ -81,7 +92,7 @@
 
         <h2 class="skills__heading">Что я могу предложить:</h2>
         <div class="row row_space-between">
-          <div class="col-s-12 col-m-6">
+          <div class="col-m-12 col-l-6">
             <div class="skills__part">
               <object
                 class="skills__icon"
@@ -99,7 +110,7 @@
               </p>
             </div>
           </div>
-          <div class="col-s-12 col-m-6">
+          <div class="col-m-12 col-l-6">
             <div class="skills__part">
               <object
                 class="skills__icon"
@@ -116,7 +127,7 @@
               </p>
             </div>
           </div>
-          <div class="col-s-12 col-m-6">
+          <div class="col-m-12 col-l-6">
             <div class="skills__part">
               <object
                 class="skills__icon"
@@ -131,7 +142,7 @@
               </p>
             </div>
           </div>
-          <div class="col-s-12 col-m-6">
+          <div class="col-m-12 col-l-6">
             <div class="skills__part">
               <object
                 class="skills__icon"
@@ -157,21 +168,21 @@
         <div class="container">
           <h2 class="photo__heading">Фото</h2>
           <div class="row row_space-between">
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__1"></div>
                 <div class="photo__desc">
                   <h4 class="photo__part-heading">
                     Выступление в составе дуэта
                   </h4>
-                  <p class="photo__p">
+                  <p class="photo__paragraph">
                     Вы можете уточнить о возможности выступления любого состава
                     артистов
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__2"></div>
 
@@ -179,26 +190,26 @@
                   <h4 class="photo__part-heading">
                     Выступление в составе ансамбля
                   </h4>
-                  <p class="photo__p">
+                  <p class="photo__paragraph">
                     Играю не только современную, но и классическую музыку
                   </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__3"></div>
                 <div class="photo__desc">
                   <h4 class="photo__part-heading">Для самых маленьких</h4>
-                  <p class="photo__p">
+                  <p class="photo__paragraph">
                     Программа выступления подобрана таким образом, чтобы малыши
                     не переутомлялись
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__4"></div>
 
@@ -206,18 +217,20 @@
                   <h4 class="photo__part-heading">
                     Первое знакомство с инструментом
                   </h4>
-                  <p class="photo__p">Самое интересное - самому попробовать!</p>
+                  <p class="photo__paragraph">
+                    Самое интересное - самому попробовать!
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__5"></div>
                 <div class="photo__desc">
                   <h4 class="photo__part-heading">
                     Классическая или электро скрипка
                   </h4>
-                  <p class="photo__p">
+                  <p class="photo__paragraph">
                     Вы можете уточнить, какую скрипку хотите слышать на своем
                     мероприятии
                   </p>
@@ -225,14 +238,14 @@
               </div>
             </div>
 
-            <div class="col-l-4 col-m-6 col-s-12">
+            <div class="col-xl-4 col-l-6 col-m-12">
               <div class="photo__card">
                 <div class="photo__container photo__6"></div>
                 <div class="photo__desc">
                   <h4 class="photo__part-heading">
                     Подготовка к домашнему концерту
                   </h4>
-                  <p class="photo__p">
+                  <p class="photo__paragraph">
                     Концентрация внимания артиста запредельная :)
                   </p>
                 </div>
@@ -244,15 +257,18 @@
       </div>
     </main>
     <footer>
-      <div class="section1">
-        <div class="footer__content">
+      <div class="footer__section1" id="section-contacts">
+        <!-- <div class="footer__content">
           <h2 class="footer__heading">Давайте дружить!</h2>
-        </div>
-        <p class="footer__p">Я открыта к любым Вашим предложениям!</p>
+        </div> -->
+        <p class="footer__paragraph">Я открыта к любым Вашим предложениям!</p>
+        <p class="footer__mail">nellie.mailbox@gmail.com</p>
+
+        <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       </div>
-      <div class="section2">
+      <div class="footer__section2">
         <a
-          class="socials"
+          class="footer__socials"
           href="https://www.facebook.com/profile.php?id=100010643256122"
           target="_blank"
         >
@@ -266,7 +282,7 @@
           </svg>
         </a>
         <a
-          class="socials"
+          class="footer__socials"
           href="https://www.instagram.com/nelligaifullina/"
           target="_blank"
         >
@@ -291,7 +307,11 @@
             </g>
           </svg>
         </a>
-        <a class="socials" href="https://vk.com/nellie.gaif" target="_blank">
+        <a
+          class="footer__socials"
+          href="https://vk.com/nellie.gaif"
+          target="_blank"
+        >
           <span class="hidden">Vkontakte</span>
           <svg viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -312,8 +332,10 @@
           </svg>
         </a>
       </div>
-      <div class="section3">
-        <p class="section3__p"><span>❤</span> By Nelly Gaifullina</p>
+      <div class="footer__section3">
+        <p class="footer__section3-paragraph">
+          By Nelly Gaifullina
+        </p>
       </div>
       <div class="hidden">
         Icons made by
@@ -326,7 +348,7 @@
     <div class="gallery">
       <div class="container">
         <div class="row">
-          <div class="col-s-12 col-m-6 col-l-3">
+          <div class="col-m-12 col-l-6 col-xl-3">
             <img
               class="gallery__image"
               src="../personal_page/img/filarmony.jpg"
@@ -338,7 +360,7 @@
               src="../personal_page/img/children.JPG"
             />
           </div>
-          <div class="col-s-12 col-m-6 col-l-3">
+          <div class="col-m-12 col-l-6 col-xl-3">
             <img class="gallery__image" src="../personal_page/img/red2.jpg" />
             <img
               class="gallery__image"
@@ -353,7 +375,7 @@
               src="../personal_page/img/with_violin.jpg"
             />
           </div>
-          <div class="col-s-12 col-m-6 col-l-3">
+          <div class="col-m-12 col-l-6 col-xl-3">
             <img
               class="gallery__image"
               src="../personal_page/img/orchestra2.jpg"
@@ -365,7 +387,7 @@
             />
             <img class="gallery__image" src="../personal_page/img/autism.jpg" />
           </div>
-          <div class="col-s-12 col-m-6 col-l-3">
+          <div class="col-m-12 col-l-6 col-xl-3">
             <img class="gallery__image" src="../personal_page/img/child.jpg" />
             <img
               class="gallery__image"

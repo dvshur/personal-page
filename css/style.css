@@ -30,3 +30,13 @@ body {
 .hidden {
   display: none;
 }
+
+.button {
+  font-family: var(--font-primary);
+  font-style: normal;
+  font-size: 20px;
+  padding: 21px 21px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  color: black;
+}

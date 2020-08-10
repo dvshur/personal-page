@@ -15,7 +15,7 @@
 
 .header__heading {
   font-size: 36px;
-  padding: 20px;
+  margin: 0;
   color: white;
 }
 
@@ -26,14 +26,12 @@
 
 .header__menu {
   text-align: right;
-  margin-top: 40px;
-  margin-right: 10px;
 }
 
 .header__menu-element {
   display: inline-block;
   font-size: 30px;
-  padding-left: 40px;
+  padding-left: 30px;
   color: white;
   transition: transform 0.5s linear;
   will-change: transform;
@@ -50,19 +48,14 @@
 .header__button {
   position: absolute;
   z-index: 1;
-  font-family: var(--font-primary);
-  font-style: normal;
-  font-size: 20px;
-  padding: 21px 21px;
-  text-transform: uppercase;
   content: "";
   bottom: 20%;
-  box-sizing: border-box;
 }
 
 .header__button:active {
   color: white;
 }
+
 .header__button::after {
   position: absolute;
   content: "";
@@ -93,4 +86,12 @@
 .header__button:active::before {
   box-shadow: none;
   background-color: var(--grey);
+}
+
+.header__phone {
+  color: white;
+}
+
+.header__wrapper {
+  padding-top: 35px;
 }

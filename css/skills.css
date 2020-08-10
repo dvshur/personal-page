@@ -1,0 +1,29 @@
+.skills__part {
+  max-width: 500px;
+  margin-bottom: 60px;
+}
+
+.skills__paragraph {
+  max-width: 470px;
+}
+
+.skills__heading {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+  padding-bottom: 65px;
+  text-transform: uppercase;
+}
+
+.skills__heading_section {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  min-height: 72px;
+}
+
+.skills__icon {
+  padding-left: 5px;
+  padding-bottom: 10px;
+}

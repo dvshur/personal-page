@@ -15,54 +15,56 @@
 .row_direction {
   flex-direction: column;
 }
+/* xs- default */
+/* s */
+@media (min-width: 576px) {
+  .col-s-12 {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
 
-.col-s-12 {
-  width: calc(100% - 20px);
-  margin: 0 10px;
+  .col-s-9 {
+    width: calc(75% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-8 {
+    width: calc(66.6666% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-7 {
+    width: calc(58.33333% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-6 {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-5 {
+    width: calc(41.66666% - 20px);
+    margin: 0 10px;
+  }
+  .col-s-4 {
+    width: calc(33.33333% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-3 {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-s-2 {
+    width: calc(16.66666% - 20px);
+    margin: 0 10px;
+  }
 }
 
-.col-s-9 {
-  width: calc(75% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-8 {
-  width: calc(66.6666% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-7 {
-  width: calc(58.33333% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-6 {
-  width: calc(50% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-5 {
-  width: calc(41.66666% - 20px);
-  margin: 0 10px;
-}
-.col-s-4 {
-  width: calc(33.33333% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-3 {
-  width: calc(25% - 20px);
-  margin: 0 10px;
-}
-
-.col-s-2 {
-  width: calc(16.66666% - 20px);
-  margin: 0 10px;
-}
-
-/* m size */
-
-@media (min-width: 800px) {
+/* m */
+@media (min-width: 768px) {
   .col-m-12 {
     width: calc(100% - 20px);
     margin: 0 10px;
@@ -107,10 +109,9 @@
     margin: 0 10px;
   }
 }
-
 /* l size */
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .col-l-12 {
     width: calc(100% - 20px);
     margin: 0 10px;
@@ -140,7 +141,6 @@
     width: calc(41.66666% - 20px);
     margin: 0 10px;
   }
-
   .col-l-4 {
     width: calc(33.33333% - 20px);
     margin: 0 10px;
@@ -152,6 +152,55 @@
   }
 
   .col-l-2 {
+    width: calc(16.66666% - 20px);
+    margin: 0 10px;
+  }
+}
+
+/* xl size */
+
+@media (min-width: 1200px) {
+  .col-xl-12 {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-9 {
+    width: calc(75% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-8 {
+    width: calc(66.6666% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-7 {
+    width: calc(58.33333% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-6 {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-5 {
+    width: calc(41.66666% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-4 {
+    width: calc(33.33333% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-3 {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+  }
+
+  .col-xl-2 {
     width: calc(16.66666% - 20px);
     margin: 0 10px;
   }
