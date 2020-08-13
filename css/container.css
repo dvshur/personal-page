@@ -1,8 +1,13 @@
 /* xs- default */
+
+.container {
+  padding: 0 8px;
+}
+
 /* s */
 @media (min-width: 576px) {
   .container {
-    width: 500px;
+    padding: 0 20px;
   }
 }
 /* m */
@@ -22,8 +27,4 @@
   .container {
     width: 1150px;
   }
-}
-
-.container {
-  margin: 0 auto;
 }

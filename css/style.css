@@ -24,7 +24,8 @@ body {
   font-family: var(--font-secondary);
   line-height: 36px;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 49px;
+  min-width: 320px;
 }
 
 .hidden {
