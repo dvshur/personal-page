@@ -1,25 +1,50 @@
 .introduction__container {
-  margin: 10% 0;
+  margin: 10% 5%;
 }
 
 .introduction__img {
-  width: 90%;
+  width: 50%;
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 }
 
-.introduction__text-position {
-  display: flex;
-  align-items: center;
+@media (min-width: 992px) {
+  .introduction__img {
+    width: 90%;
+  }
+}
+.introduction__paragraph {
+  line-height: 30px;
 }
 
-.introduction__heading {
+/* for desktop */
+/* .introduction__heading {
   font-family: var(--font-primary);
   font-size: 38px;
   font-weight: normal;
   padding-bottom: 17px;
   text-transform: uppercase;
+} */
+
+.introduction__heading {
+  font-family: var(--font-primary);
+  font-size: 38px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .introduction__heading {
+    font-size: 44px;
+    margin-bottom: 15px;
+  }
+  .introduction__paragraph {
+    line-height: 40px;
+  }
+}
 .introduction__button {
   position: relative;
   z-index: 1;
