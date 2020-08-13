@@ -7,9 +7,10 @@
 /* s */
 @media (min-width: 576px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
+
 /* m */
 @media (min-width: 768px) {
   .container {
