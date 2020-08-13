@@ -1,31 +1,33 @@
 /* xs- default */
 
 .container {
-  padding: 0 8px;
+  margin: 0 8px;
 }
 
 /* s */
 @media (min-width: 576px) {
   .container {
-    padding: 0 30px;
+    margin: 0 30px;
   }
 }
 
 /* m */
 @media (min-width: 768px) {
   .container {
-    width: 700px;
+    margin: 0 40px;
   }
 }
 /* l */
 @media (min-width: 992px) {
   .container {
     width: 900px;
+    margin: 0 auto;
   }
 }
 /* xl */
 @media (min-width: 1200px) {
   .container {
     width: 1150px;
+    margin: 0 auto;
   }
 }
