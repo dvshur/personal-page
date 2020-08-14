@@ -3,28 +3,30 @@
 }
 
 .photo__card {
-  min-height: 437px;
+  /* min-height: 437px; */
   position: relative;
   display: block;
   background-color: white;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 36px;
 }
 
-.photo__card::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  transition: box-shadow 0.5s linear;
-  will-change: transform;
-}
+@media (min-width: 576px) {
+  .photo__card::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.5s linear;
+    will-change: transform;
+  }
 
-.photo__card:hover::before {
-  box-shadow: 0px 6px 6px 6px rgba(30, 45, 62, 0.2);
+  .photo__card:hover::before {
+    box-shadow: 0px 6px 6px 6px rgba(30, 45, 62, 0.2);
+  }
 }
-
 .photo__container {
   width: 100%;
   height: 0;
@@ -42,12 +44,13 @@
 }
 
 .photo__part-heading {
-  min-height: 60px;
+  /* min-height: 60px; */
   font-family: var(--font-primary);
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
-  margin-bottom: 10px;
+  padding: 0;
+  /* margin-bottom: 10px; */
 }
 
 .photo__1 {
@@ -77,19 +80,21 @@
 }
 
 .photo__desc {
-  padding: 40px 30px 5px 30px;
+  padding: 20px 30px 5px 30px;
   min-height: 155px;
 }
 
 .photo__button {
   display: inline-block;
-  padding: 14px 30px;
-  border-radius: 30px;
+  width: 100%;
+  /* padding: 14px 30px; */
+  border-radius: 20px;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   background-image: linear-gradient(-133deg, #7282eb, #74aee3);
   text-decoration: none;
+  text-align: center;
   margin-bottom: 60px;
 }
 
