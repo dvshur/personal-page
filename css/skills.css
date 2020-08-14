@@ -17,6 +17,7 @@
     margin-bottom: 90px;
   }
 }
+
 .skills__paragraph {
   line-height: 30px;
   padding-left: 32px;
@@ -79,10 +80,11 @@
   .skills__heading_section {
     font-size: 36px;
   }
+
   .skills__icon {
     width: 40px;
     height: 40px;
-    left: -16px;
+    /* left: -16px; */
     top: -3px;
   }
 }
