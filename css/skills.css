@@ -1,29 +1,44 @@
+.skills__container {
+  margin: 25% 5%;
+}
+
 .skills__part {
   max-width: 500px;
   margin-bottom: 60px;
 }
 
 .skills__paragraph {
-  max-width: 470px;
+  /* max-width: 470px; */
+  line-height: 30px;
+  padding-left: 32px;
 }
 
 .skills__heading {
   font-family: var(--font-primary);
   font-size: 38px;
   font-weight: normal;
-  padding-bottom: 65px;
+  padding-bottom: 30px;
   text-transform: uppercase;
 }
 
 .skills__heading_section {
   font-family: var(--font-primary);
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 24px;
   font-weight: normal;
   padding-bottom: 10px;
-  min-height: 72px;
+  padding-left: 32px;
+  line-height: 30px;
+  /* min-height: 72px; */
+  position: relative;
 }
 
 .skills__icon {
-  padding-left: 5px;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  /* padding-left: 5px;
   padding-bottom: 10px;
+    height="50" for desktop */
 }
