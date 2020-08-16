@@ -3,16 +3,25 @@
 }
 
 .photo__card {
-  /* min-height: 437px; */
   position: relative;
   display: block;
   background-color: white;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
-  /* margin-bottom: 20px; */
   margin-bottom: 36px;
 }
 
+@media (min-width: 992px) {
+  .photo__card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__card {
+    min-height: 450px;
+  }
+}
 @media (min-width: 576px) {
   .photo__card::before {
     position: absolute;
@@ -47,13 +56,32 @@
 .photo__part-heading {
   /* min-height: 60px; */
   font-family: var(--font-primary);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: normal;
   line-height: 30px;
   padding: 0;
+  padding-bottom: 10px;
   /* margin-bottom: 10px; */
 }
 
+@media (min-width: 576px) {
+  .photo__part-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo__part-heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo__part-heading {
+    min-height: 50px;
+    font-size: 30px;
+  }
+}
 .photo__1 {
   background-image: url("../img/arbat.jpg");
 }
@@ -81,14 +109,14 @@
 }
 
 .photo__desc {
-  padding: 20px 30px 5px 30px;
+  padding: 30px 30px 5px 30px;
   min-height: 155px;
 }
 
 .photo__button {
   display: inline-block;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -96,6 +124,14 @@
   text-decoration: none;
   text-align: center;
   margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .photo__button {
+    width: auto;
+    padding: 5px 50px;
+    border-radius: 7px;
+  }
 }
 
 .photo__paragraph {

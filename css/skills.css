@@ -57,6 +57,12 @@
   position: relative;
 }
 
+@media (min-width: 576px) {
+  .skills__heading_section {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 992px) {
   .skills__heading_section {
     min-height: 72px;
