@@ -19,9 +19,9 @@
     <link href="css/introduction.css" rel="stylesheet" />
     <link href="css/skills.css" rel="stylesheet" />
     <link href="css/photo.css" rel="stylesheet" />
-
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/modal.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -55,7 +55,7 @@
           <a class="header__phone" href="tel:+78125550555"
             >+7 (812) 555-05-55</a
           >
-          <button class="button header__button">Заказать выступление</button>
+          <button class="button header__button">Запросить мероприятие</button>
         </section>
       </div>
     </header>
@@ -408,6 +408,76 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="modal">
+      <button type="button" class="modal__button-close"></button>
+      <form action="#" method="POST">
+        <div class="row">
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-name">Имя</label>
+            <input
+              class="modal__input"
+              type="text"
+              id="modal-name"
+              name="name"
+              placeholder="Василий Петрович"
+              required
+            />
+          </div>
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-phone">Телефон</label>
+            <input
+              class="modal__input"
+              id="modal-phone"
+              type="tel"
+              placeholder="+79852233444"
+            />
+          </div>
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-email">E-mail</label>
+            <input
+              class="modal__input"
+              id="modal-email"
+              type="email"
+              name="email"
+              placeholder="vasya@mail.ru"
+            />
+          </div>
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-date"
+              >Дата мероприятия</label
+            >
+            <input
+              class="modal__input"
+              id="modal-date"
+              type="text"
+              placeholder="8.03.22"
+              name="date"
+            />
+          </div>
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-time">Время</label>
+            <input
+              class="modal__input"
+              name="time"
+              id="modal-time"
+              type="text"
+              placeholder="18:00"
+            />
+          </div>
+          <div class="col-xs-12">
+            <label class="modal__label" for="modal-address">Адрес</label>
+            <input
+              class="modal__input"
+              id="modal-address"
+              name="address"
+              type="text"
+              placeholder="Фрунзенская набережная 5"
+            />
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -28,6 +28,7 @@ body {
   min-width: 320px;
   box-sizing: border-box;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .hidden {

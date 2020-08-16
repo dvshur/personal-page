@@ -1,0 +1,28 @@
+.modal {
+  max-width: 680px;
+  background-color: lightgray;
+  padding-left: 20px;
+}
+.modal__button-close {
+  width: 21px;
+  height: 2px;
+  color: red;
+  content: "";
+  position: absolute;
+}
+
+.modal__label {
+  display: block;
+}
+
+.modal__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+.modal__input::placeholder {
+  font-size: 14px;
+  text-decoration: wavy;
+}
