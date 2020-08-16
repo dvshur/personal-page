@@ -19,8 +19,14 @@
 
 .footer__paragraph {
   margin-bottom: 10px;
+  display: none;
 }
 
+@media (min-width: 576px) {
+  .footer__paragraph {
+    display: block;
+  }
+}
 .footer__content {
   max-width: 500px;
 }
