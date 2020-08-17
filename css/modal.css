@@ -10,6 +10,11 @@
 .modal__part {
   margin-bottom: 10px;
 }
+@media (min-width: 576px) {
+  .modal__part {
+    margin-right: 10px;
+  }
+}
 
 .modal__button-close {
   display: block;
