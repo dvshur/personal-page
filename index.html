@@ -415,68 +415,96 @@
       <form action="#" method="POST">
         <div class="row">
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-name">Имя</label>
-            <input
-              class="modal__input"
-              type="text"
-              id="modal-name"
-              name="name"
-              placeholder="Василий Петрович"
-              required
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-name">Имя</label>
+              <input
+                class="modal__input"
+                type="text"
+                id="modal-name"
+                name="name"
+                placeholder="Василий Петрович"
+                required
+              />
+            </div>
           </div>
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-phone">Телефон</label>
-            <input
-              class="modal__input"
-              id="modal-phone"
-              type="tel"
-              placeholder="+79852233444"
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-phone">Телефон</label>
+              <input
+                class="modal__input"
+                id="modal-phone"
+                type="tel"
+                placeholder="+79852233444"
+              />
+            </div>
           </div>
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-email">E-mail</label>
-            <input
-              class="modal__input"
-              id="modal-email"
-              type="email"
-              name="email"
-              placeholder="vasya@mail.ru"
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-email">E-mail</label>
+              <input
+                class="modal__input"
+                id="modal-email"
+                type="email"
+                name="email"
+                placeholder="vasya@mail.ru"
+              />
+            </div>
           </div>
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-date"
-              >Дата мероприятия</label
-            >
-            <input
-              class="modal__input"
-              id="modal-date"
-              type="text"
-              placeholder="8.03.22"
-              name="date"
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-date"
+                >Дата мероприятия</label
+              >
+              <input
+                class="modal__input"
+                id="modal-date"
+                type="text"
+                placeholder="8.03.22"
+                name="date"
+              />
+            </div>
           </div>
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-time">Время</label>
-            <input
-              class="modal__input"
-              name="time"
-              id="modal-time"
-              type="text"
-              placeholder="18:00"
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-time">Время</label>
+              <input
+                class="modal__input"
+                name="time"
+                id="modal-time"
+                type="text"
+                placeholder="18:00"
+              />
+            </div>
           </div>
           <div class="col-xs-12">
-            <label class="modal__label" for="modal-address">Адрес</label>
-            <input
-              class="modal__input"
-              id="modal-address"
-              name="address"
-              type="text"
-              placeholder="Фрунзенская набережная 5"
-            />
+            <div class="modal__part">
+              <label class="modal__label" for="modal-address">Адрес</label>
+              <input
+                class="modal__input"
+                id="modal-address"
+                name="address"
+                type="text"
+                placeholder="Фрунзенская набережная, 5"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-info"
+                >Дополнительная информация</label
+              >
+              <input
+                class="modal__input modal__input_textarea"
+                id="modal-info"
+                name="info"
+                type="text"
+              />
+            </div>
           </div>
         </div>
+        <button type="submit" class="button modal__button-send">
+          Отправить
+        </button>
       </form>
     </div>
   </body>
