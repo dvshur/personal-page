@@ -2,9 +2,14 @@
   max-width: 680px;
   background-color: lightgray;
   padding: 35px;
-  position: relative;
   box-sizing: border-box;
   border: 2px solid lightgray;
+}
+
+.modal_to-make-order {
+  position: fixed;
+  top: 0;
+  left: 10%;
 }
 
 .modal__part {
