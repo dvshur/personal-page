@@ -410,9 +410,11 @@
         </div>
       </div>
     </div>
-    <div class="modal__wrapper">
-      <div class="modal modal_to-make-order hidden">
+
+    <div class="modal modal_to-make-order hidden">
+      <div class="modal__wrapper">
         <button type="button" class="modal__button-close"></button>
+        <h3 class="modal__heading">Запросить мероприятие</h3>
         <form action="#" method="POST">
           <div class="row">
             <div class="col-xs-12 col-m-6">
@@ -499,6 +501,48 @@
                   id="modal-info"
                   name="info"
                   type="text"
+                />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="button modal__button-send">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal_call-me hidden">
+      <div class="modal__wrapper">
+        <button type="button" class="modal__button-close"></button>
+        <h3 class="modal__heading">Заказать звонок</h3>
+        <form action="#" method="POST">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="modal__part">
+                <label class="modal__label" for="modal_call-me-name"
+                  >Ваше имя</label
+                >
+                <input
+                  class="modal__input"
+                  id="modal_call-me-name"
+                  type="text"
+                  placeholder="Иван Петрович"
+                  name="name"
+                />
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="modal__part">
+                <label class="modal__label" for="modal_call-me-tel"
+                  >Телефон для связи</label
+                >
+                <input
+                  class="modal__input"
+                  id="modal_call-me-tel"
+                  type="tel"
+                  placeholder="+79993456534"
+                  name="tel"
                 />
               </div>
             </div>

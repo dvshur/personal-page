@@ -1,5 +1,6 @@
 initMakeAnOrder();
 initOpenGallery();
+initCallMe();
 
 function initMakeAnOrder() {
   var HIDDEN = "hidden";
@@ -35,6 +36,26 @@ function initOpenGallery() {
   });
 
   close.addEventListener("click", function () {
+    modal.classList.add(HIDDEN);
+  });
+}
+
+function initCallMe() {
+  var HIDDEN = document.querySelector(".hidden");
+
+  var open = document.querySelector(".introduction__button");
+  var close = document.querySelector(".modal__button-close");
+  var send = document.querySelector(".modal__button-send");
+  var modal = document.querySelector(".modal_call-me");
+
+  open.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove(HIDDEN);
+  });
+  close.addEventListener("click", function () {
+    modal.classList.add(HIDDEN);
+  });
+  send.addEventListener("click", function () {
     modal.classList.add(HIDDEN);
   });
 }
