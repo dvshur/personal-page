@@ -1,8 +1,39 @@
 .gallery {
   border: 2px grey solid;
+  position: relative;
 }
 
 .gallery__image {
   width: 100%;
   margin-bottom: 10px;
+}
+
+.gallery__button-close {
+  display: block;
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 5px;
+  top: 10px;
+  background-color: transparent;
+}
+
+.gallery__button-close::before {
+  width: 27px;
+  height: 4px;
+  background-color: red;
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+  right: 5px;
+}
+
+.gallery__button-close::after {
+  width: 27px;
+  height: 4px;
+  background-color: red;
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  right: 5px;
 }
