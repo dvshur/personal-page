@@ -35,6 +35,10 @@ body {
   display: none;
 }
 
+.visible {
+  display: block;
+}
+
 .button {
   font-family: var(--font-primary);
   font-style: normal;
