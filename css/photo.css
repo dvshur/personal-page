@@ -6,6 +6,7 @@
   position: relative;
   display: block;
   background-color: white;
+  color: black;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   border-radius: 3px;
   margin-bottom: 36px;
