@@ -78,11 +78,18 @@
   .header__menu-element {
     width: unset;
     display: inline-block;
-    padding-left: 30px;
+    padding: 14px 30px;
+    /* padding-left: 30px; */
     transition: transform 0.5s linear;
     will-change: transform;
   }
+
+  .header__menu-element:hover {
+    background-color: transparent;
+    color: white;
+  }
 }
+
 @media (min-width: 992px) {
   .header__menu-element {
     font-size: 40px;

@@ -52,7 +52,7 @@
   font-weight: normal;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 32px;
+  padding-left: 82px;
   line-height: 30px;
   position: relative;
 }
@@ -60,6 +60,12 @@
 @media (min-width: 576px) {
   .skills__heading_section {
     font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills__heading_section {
+    font-size: 36px;
   }
 }
 
@@ -75,7 +81,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  left: -5px;
+  left: 40px;
   top: 4px;
   /* padding-left: 5px;
   padding-bottom: 10px;
@@ -83,14 +89,15 @@
 }
 
 @media (min-width: 768px) {
-  .skills__heading_section {
-    font-size: 36px;
-  }
-
   .skills__icon {
     width: 40px;
     height: 40px;
-    /* left: -16px; */
+    left: 30px;
     top: -3px;
+  }
+}
+@media (min-width: 992px) {
+  .skills__icon {
+    top: 5px;
   }
 }
