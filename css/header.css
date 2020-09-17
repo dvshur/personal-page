@@ -70,24 +70,14 @@
   text-align: center;
 }
 
-.header__menu-element:hover {
-  background-color: black;
-  opacity: 0.3;
-}
-
 @media (min-width: 768px) {
   .header__menu-element {
     width: unset;
     display: inline-block;
     padding-top: 14px;
-    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, color 0.5s linear 0s;
     will-change: transform;
     padding-top: 0;
-  }
-
-  .header__menu-element:hover {
-    background-color: transparent;
-    color: white;
   }
 }
 
@@ -99,10 +89,8 @@
 
 .header__menu-element:hover {
   transform: scale(1.1);
-}
-
-.header__menu-element:active {
   color: black;
+  opacity: 0.8;
 }
 
 .header__button {
