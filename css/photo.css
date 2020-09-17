@@ -12,6 +12,20 @@
   margin-bottom: 36px;
 }
 
+.photo__button {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .photo__button {
+    width: auto;
+  }
+}
+.photo__card_gallery {
+  position: relative;
+}
+
 @media (min-width: 992px) {
   .photo__card {
     margin-bottom: 20px;
@@ -109,30 +123,69 @@
   background-position: 0 20%;
 }
 
+.photo__7 {
+  background-image: url("../img/filarmony.jpg");
+}
+
+.photo__8 {
+  background-image: url("../img/pier.jpg");
+  background-position: 10% 20%;
+}
+
+.photo__9 {
+  background-image: url("../img/red.jpg");
+  background-position: 0 50%;
+}
+
+.photo__10 {
+  background-image: url("../img/children.JPG");
+}
+
+.photo__11 {
+  background-image: url("../img/red2.jpg");
+  background-position: 0 34%;
+}
+
+.photo__12 {
+  background-image: url("../img/open_air.jpg");
+  background-position: 0 20%;
+}
+
+.photo__13 {
+  background-image: url("../img/oleshko.jpg");
+}
+
+.photo__14 {
+  background-image: url("../img/with_violin.jpg");
+}
+
+.photo__15 {
+  background-image: url("../img/orchestra2.jpg");
+}
+
+.photo__16 {
+  background-image: url("../img/lesson.jpg");
+}
+
+.photo__17 {
+  background-image: url("../img/little-violin.jpg");
+}
+
+.photo__18 {
+  background-image: url("../img/autism.jpg");
+}
+
+.photo__19 {
+  background-image: url("../img/child.jpg");
+}
+
+.photo__20 {
+  background-image: url("../img/lesson2.jpg");
+}
+
 .photo__desc {
-  padding: 30px 30px 5px 30px;
+  padding: 30px 10px 5px 15px;
   min-height: 155px;
-}
-
-.photo__button {
-  display: inline-block;
-  width: 100%;
-  border-radius: 30px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  background-image: linear-gradient(-133deg, #7282eb, #74aee3);
-  text-decoration: none;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-@media (min-width: 768px) {
-  .photo__button {
-    width: auto;
-    padding: 5px 50px;
-    border-radius: 7px;
-  }
 }
 
 .photo__paragraph {

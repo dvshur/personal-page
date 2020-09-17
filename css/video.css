@@ -1,0 +1,15 @@
+.video__heading {
+  font-family: var(--font-primary);
+  font-size: 56px;
+  font-weight: normal;
+  padding-top: 79px;
+  padding-bottom: 40px;
+}
+
+.video__section {
+  padding-bottom: 70px;
+}
+
+.video__part {
+  max-width: 677px;
+}

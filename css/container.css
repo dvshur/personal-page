@@ -1,7 +1,7 @@
 /* xs- default */
 
 .container {
-  margin: 0 8px;
+  margin: 0 30px;
 }
 
 /* s */
@@ -17,6 +17,7 @@
     margin: 0 40px;
   }
 }
+
 /* l */
 @media (min-width: 992px) {
   .container {

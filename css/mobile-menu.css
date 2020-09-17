@@ -1,23 +1,18 @@
 .mobile__button {
-  position: absolute;
+  position: fixed;
   top: 10px;
-  right: 10px;
-  width: 34px;
-  height: 34px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
   background-color: grey;
   border-radius: 3px;
+  z-index: 3;
 }
 
 .mobile__button:hover {
   background-color: black;
 }
-@media (min-width: 576px) {
-  .mobile__button {
-    width: 39px;
-    height: 39px;
-    margin-left: 36px;
-  }
-}
+
 @media (min-width: 768px) {
   .mobile__button {
     display: none;
@@ -31,24 +26,24 @@
   width: 80%;
   height: 2px;
   background-color: white;
-  top: 8px;
+  top: 6px;
   left: 3px;
   box-shadow: 0 8px white, 0 16px white;
 }
 .mobile__button-close {
-  display: none;
   position: absolute;
   width: 35px;
   height: 35px;
-  left: 5px;
+  right: 10px;
   top: 10px;
+  z-index: 3;
   background-color: transparent;
 }
 
 .mobile__button-close::before {
   width: 27px;
   height: 4px;
-  background-color: red;
+  background-color: #74aee3;
   content: "";
   position: absolute;
   transform: rotate(45deg);
@@ -58,7 +53,7 @@
 .mobile__button-close::after {
   width: 27px;
   height: 4px;
-  background-color: red;
+  background-color: #74aee3;
   content: "";
   position: absolute;
   transform: rotate(-45deg);

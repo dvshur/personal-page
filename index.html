@@ -12,7 +12,6 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/container.css" rel="stylesheet" />
     <link href="css/grid.css" rel="stylesheet" />
-    <link href="css/hidden.css" rel="stylesheet" />
 
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
@@ -22,7 +21,9 @@
     <link href="css/photo.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/video.css" rel="stylesheet" />
     <link href="css/modal.css" rel="stylesheet" />
+    <link href="css/visibility.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -39,23 +40,28 @@
               </div>
 
               <div class="col-xs-12 col-m-9">
-                <nav class="header__menu">
+                <nav class="header__menu visible-m">
                   <a class="header__menu-element" href="#section-about-me"
                     >Обо мне</a
                   >
                   <a class="header__menu-element" href="#section-photo">Фото</a>
-                  <a class="header__menu-element">Видео</a>
+                  <a class="header__menu-element" href="#section-video"
+                    >Видео</a
+                  >
                   <a class="header__menu-element" href="#section-contacts"
                     >Контакты</a
                   >
                 </nav>
-                <button type="button" class="mobile__button-close"></button>
+                <button
+                  type="button"
+                  class="mobile__button-close hidden"
+                ></button>
                 <button class="mobile__button"></button>
               </div>
             </div>
           </div>
           <a class="header__phone" href="tel:+78125550555"
-            >+7 (812) 555-05-55</a
+            >+7 (985) 24-00-535</a
           >
           <button class="button header__button">Запросить мероприятие</button>
         </section>
@@ -99,9 +105,7 @@
             <div class="col-m-12 col-l-6">
               <div class="skills__part">
                 <div class="skills__heading_section">
-                  <h3>
-                    Музыкальное сопровождение праздника
-                  </h3>
+                  <h3>Музыкальное сопровождение праздника</h3>
                   <object
                     class="skills__icon"
                     data="/Users/nellie/projects/personal_page/img/svg/gift.svg"
@@ -156,9 +160,7 @@
                     class="skills__icon"
                     data="/Users/nellie/projects/personal_page/img/svg/autism.svg"
                   ></object>
-                  <h3>
-                    Обучение детей с особенностями развития
-                  </h3>
+                  <h3>Обучение детей с особенностями развития</h3>
                 </div>
 
                 <p class="skills__paragraph">
@@ -177,8 +179,8 @@
         <div class="container">
           <h2 class="photo__heading">Фото</h2>
           <div class="row row_space-between">
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
-              <a href="#" class="photo__card">
+            <div class="col-xs-12 col-m-6">
+              <a href="link" class="photo__card">
                 <div class="photo__container photo__1"></div>
                 <div class="photo__desc">
                   <h4 class="photo__part-heading">
@@ -191,7 +193,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
+            <div class="col-xs-12 col-m-6">
               <a href="#" class="photo__card">
                 <div class="photo__container photo__2"></div>
                 <div class="photo__desc">
@@ -205,7 +207,7 @@
               </a>
             </div>
 
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
+            <div class="col-xs-12 col-m-6">
               <a href="#" class="photo__card">
                 <div class="photo__container photo__3"></div>
                 <div class="photo__desc">
@@ -217,7 +219,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
+            <div class="col-xs-12 col-m-6">
               <a href="#" class="photo__card">
                 <div class="photo__container photo__4"></div>
                 <div class="photo__desc">
@@ -230,7 +232,7 @@
                 </div>
               </a>
             </div>
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
+            <div class="col-xs-12 col-m-6">
               <a href="#" class="photo__card">
                 <div class="photo__container photo__5"></div>
                 <div class="photo__desc">
@@ -245,7 +247,7 @@
               </a>
             </div>
 
-            <div class="col-xs-12 col-xl-4 col-l-6 col-m-12">
+            <div class="col-xs-12 col-m-6">
               <a href="#" class="photo__card">
                 <div class="photo__container photo__6"></div>
                 <div class="photo__desc">
@@ -258,8 +260,231 @@
                 </div>
               </a>
             </div>
+            <div class="col-xs-12">
+              <button type="button" class="button photo__button">
+                Смотреть все
+              </button>
+            </div>
+            <div class="photo__card_gallery hidden">
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__7"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Выступление в зале филармонии
+                    </h4>
+                    <p class="photo__paragraph">
+                      Трансляцию концертов вы можете найти на сайте московской
+                      филармонии
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__8"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      На съемках клипа с Пьером Нарциссом
+                    </h4>
+                    <p class="photo__paragraph">Тот самый шоколадный заяц :)</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__9"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Выступление в театре</h4>
+                    <p class="photo__paragraph">Встречаю гостей</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__10"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Сказка детям</h4>
+                    <p class="photo__paragraph">
+                      Рассказываю из чего состоит скрипка
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__11"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Выступление на конкурсе красоты
+                    </h4>
+                    <p class="photo__paragraph">
+                      Устроили эффектное музыкальное шоу
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__12"></div>
+
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Выступление на открытой площадке
+                    </h4>
+                    <p class="photo__paragraph">
+                      Пригласили устроить концерт для детей во дворе больницы
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__13"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">С Александром Олешко</h4>
+                    <p class="photo__paragraph">
+                      Музыкальное сопровождения спектакля в составе квартета
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__14"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Групповое музыкальное занятие
+                    </h4>
+                    <p class="photo__paragraph">
+                      Эмоции играющего явно положительные
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__15"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Струнный ансамбль</h4>
+                    <p class="photo__paragraph">Репетиция струнной группы</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__16"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Подготовка к домашнему концерту
+                    </h4>
+                    <p class="photo__paragraph">
+                      Концентрация внимания артиста запредельная :)
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__17"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Групповое занятие</h4>
+                    <p class="photo__paragraph">
+                      Внимательно слежу за реакцией малышей
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__18"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Музыкальное занятие</h4>
+                    <p class="photo__paragraph">
+                      Пришли в гости к ребятам с аутизмом
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__19"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">
+                      Знакомство с инструментом
+                    </h4>
+                    <p class="photo__paragraph">Скрипку можно трогать!</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-m-6">
+                <a href="#" class="photo__card">
+                  <div class="photo__container photo__20"></div>
+                  <div class="photo__desc">
+                    <h4 class="photo__part-heading">Групповое занятие</h4>
+                    <p class="photo__paragraph">
+                      Первый круг родителей, второй детей
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <a href="#" class="photo__button">Смотреть все</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="video__section" id="section-video">
+          <h2 class="video__heading">Видео</h2>
+          <div class="row">
+            <div class="col-xs-12 col-m-6">
+              <iframe
+                class="video__part"
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/ARpTlxUJam8?controls=0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="col-xs-12 col-m-6">
+              <iframe
+                class="video__part"
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/B8g3_FPJdDk"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="col-xs-12 col-m-6">
+              <iframe
+                class="video__part"
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/167oJfT-Vqo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+            <div class="col-xs-12 col-m-6">
+              <iframe
+                class="video__part"
+                width="100%"
+                height="315"
+                src="https://www.youtube.com/embed/4V3imNAwuy8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -269,11 +494,11 @@
           <h2 class="footer__heading">Давайте дружить!</h2>
         </div> -->
 
-        <p class="footer__paragraph">Я открыта к любым Вашим предложениям!</p>
+        <p class="footer__paragraph">По вопросам огранизации выступлений:</p>
 
         <p class="footer__mail">nellie.mailbox@gmail.com</p>
 
-        <a class="footer__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="footer__phone" href="tel:+78125550555">+7 (985) 24-00-535</a>
       </div>
       <div class="footer__section2">
         <a
@@ -342,9 +567,7 @@
         </a>
       </div>
       <div class="footer__section3">
-        <p class="footer__section3-paragraph">
-          By Nelly Gaifullina
-        </p>
+        <p class="footer__section3-paragraph">By Nelly Gaifullina</p>
       </div>
       <div class="hidden">
         Icons made by
@@ -354,205 +577,161 @@
         >
       </div>
     </footer>
-    <div class="gallery hidden">
+    <!-- <div class="gallery">
       <button type="button" class="gallery__button-close"></button>
       <div class="container">
+        <div class="row"></div>
+      </div>
+    </div> -->
+    <div class="modal__overlay hidden"></div>
+    <div class="modal modal_to-make-order hidden">
+      <button
+        type="button"
+        class="modal__button-close modal_to-make-order-close"
+      ></button>
+      <h3 class="modal__heading">Запросить мероприятие</h3>
+      <form action="#" method="POST" class="modal_to-make-order-actions">
         <div class="row">
-          <div class="col-m-12 col-l-6 col-xl-3">
-            <img
-              class="gallery__image"
-              src="../personal_page/img/filarmony.jpg"
-            />
-            <img class="gallery__image" src="../personal_page/img/pier.jpg" />
-            <img class="gallery__image" src="../personal_page/img/red.jpg" />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/children.JPG"
-            />
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-name">Имя</label>
+              <input
+                class="modal__input"
+                type="text"
+                id="modal-name"
+                name="modal_to-make-order-name"
+                placeholder="Василий Петрович"
+                required="required"
+              />
+            </div>
           </div>
-          <div class="col-m-12 col-l-6 col-xl-3">
-            <img class="gallery__image" src="../personal_page/img/red2.jpg" />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/open_air.jpg"
-            />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/oleshko.jpg"
-            />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/with_violin.jpg"
-            />
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-phone">Телефон</label>
+              <input
+                class="modal__input"
+                id="modal-phone"
+                type="tel"
+                name="modal_to-make-order-tel"
+                placeholder="+79852233444"
+              />
+            </div>
           </div>
-          <div class="col-m-12 col-l-6 col-xl-3">
-            <img
-              class="gallery__image"
-              src="../personal_page/img/orchestra2.jpg"
-            />
-            <img class="gallery__image" src="../personal_page/img/lesson.jpg" />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/little-violin.jpg"
-            />
-            <img class="gallery__image" src="../personal_page/img/autism.jpg" />
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-email">E-mail</label>
+              <input
+                class="modal__input"
+                id="modal-email"
+                type="email"
+                name="email"
+                placeholder="vasya@mail.ru"
+              />
+            </div>
           </div>
-          <div class="col-m-12 col-l-6 col-xl-3">
-            <img class="gallery__image" src="../personal_page/img/child.jpg" />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/lesson2.jpg"
-            />
-            <img
-              class="gallery__image"
-              src="../personal_page/img/children2.jpg"
-            />
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-date"
+                >Дата мероприятия</label
+              >
+              <input
+                class="modal__input"
+                id="modal-date"
+                type="text"
+                placeholder="8.03.22"
+                name="date"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-time">Время</label>
+              <input
+                class="modal__input"
+                name="time"
+                id="modal-time"
+                type="text"
+                placeholder="18:00"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-m-6">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-address">Адрес</label>
+              <input
+                class="modal__input"
+                id="modal-address"
+                name="address"
+                type="text"
+                placeholder="Фрунзенская набережная, 5"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="modal__part">
+              <label class="modal__label" for="modal-info"
+                >Дополнительная информация</label
+              >
+              <input
+                class="modal__input modal__input_textarea"
+                id="modal-info"
+                name="info"
+                type="text"
+              />
+            </div>
           </div>
         </div>
-      </div>
+        <button type="submit" class="button modal__button-send">
+          Отправить
+        </button>
+      </form>
     </div>
-
-    <div class="modal modal_to-make-order hidden">
-      <div class="modal__wrapper">
-        <button type="button" class="modal__button-close"></button>
-        <h3 class="modal__heading">Запросить мероприятие</h3>
-        <form action="#" method="POST">
-          <div class="row">
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-name">Имя</label>
-                <input
-                  class="modal__input"
-                  type="text"
-                  id="modal-name"
-                  name="name"
-                  placeholder="Василий Петрович"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-phone">Телефон</label>
-                <input
-                  class="modal__input"
-                  id="modal-phone"
-                  type="tel"
-                  placeholder="+79852233444"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-email">E-mail</label>
-                <input
-                  class="modal__input"
-                  id="modal-email"
-                  type="email"
-                  name="email"
-                  placeholder="vasya@mail.ru"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-date"
-                  >Дата мероприятия</label
-                >
-                <input
-                  class="modal__input"
-                  id="modal-date"
-                  type="text"
-                  placeholder="8.03.22"
-                  name="date"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-time">Время</label>
-                <input
-                  class="modal__input"
-                  name="time"
-                  id="modal-time"
-                  type="text"
-                  placeholder="18:00"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-m-6">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-address">Адрес</label>
-                <input
-                  class="modal__input"
-                  id="modal-address"
-                  name="address"
-                  type="text"
-                  placeholder="Фрунзенская набережная, 5"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="modal__part">
-                <label class="modal__label" for="modal-info"
-                  >Дополнительная информация</label
-                >
-                <input
-                  class="modal__input modal__input_textarea"
-                  id="modal-info"
-                  name="info"
-                  type="text"
-                />
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="button modal__button-send">
-            Отправить
-          </button>
-        </form>
-      </div>
-    </div>
-
+    <div class="modal__overlay hidden"></div>
     <div class="modal modal_call-me hidden">
-      <div class="modal__wrapper">
-        <button type="button" class="modal__button-close"></button>
-        <h3 class="modal__heading">Заказать звонок</h3>
-        <form action="#" method="POST">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="modal__part">
-                <label class="modal__label" for="modal_call-me-name"
-                  >Ваше имя</label
-                >
-                <input
-                  class="modal__input"
-                  id="modal_call-me-name"
-                  type="text"
-                  placeholder="Иван Петрович"
-                  name="name"
-                />
-              </div>
-            </div>
-            <div class="col-xs-12">
-              <div class="modal__part">
-                <label class="modal__label" for="modal_call-me-tel"
-                  >Телефон для связи</label
-                >
-                <input
-                  class="modal__input"
-                  id="modal_call-me-tel"
-                  type="tel"
-                  placeholder="+79993456534"
-                  name="tel"
-                />
-              </div>
+      <button
+        type="button"
+        class="modal__button-close modal_call-me__button-close"
+      ></button>
+      <h3 class="modal__heading">Заказать звонок</h3>
+      <form action="#" method="POST" class="modal_call-me-actions">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="modal__part">
+              <label class="modal__label" for="modal_call-me-name"
+                >Ваше имя</label
+              >
+              <input
+                class="modal__input"
+                id="modal_call-me-name"
+                type="text"
+                placeholder="Иван Петрович"
+                name="modal_call-me-name"
+              />
             </div>
           </div>
-          <button type="submit" class="button modal__button-send">
-            Отправить
-          </button>
-        </form>
-      </div>
+          <div class="col-xs-12">
+            <div class="modal__part">
+              <label class="modal__label" for="modal_call-me-tel"
+                >Телефон для связи</label
+              >
+              <input
+                class="modal__input"
+                id="modal_call-me-tel"
+                type="tel"
+                placeholder="+79993456534"
+                name="modal_call-me-tel"
+                required="required"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="button modal__button-send modal_call-me__button-send"
+        >
+          Отправить
+        </button>
+      </form>
     </div>
     <script src="js/index.js"></script>
   </body>

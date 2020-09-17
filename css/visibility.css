@@ -1,0 +1,38 @@
+/* if neccesary, add .hidden-xs, optional alias — .hidden  */
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .hidden-s {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden-m {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .visible-m {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-l {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-xl {
+    display: none;
+  }
+}

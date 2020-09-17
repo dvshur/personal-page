@@ -1,11 +1,13 @@
 .introduction__container {
-  padding: 10% 5%;
+  padding: 50px 10px;
   /* not margin for anchor */
+  margin-top: 50px;
+  /* margin for mobile */
 }
 
 @media (min-width: 1200px) {
   .introduction__container {
-    padding: 20% 5%;
+    padding: 20% 0;
   }
 }
 
@@ -21,6 +23,8 @@
 @media (min-width: 992px) {
   .introduction__img {
     width: 90%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .introduction__paragraph {
@@ -49,7 +53,7 @@
   content: "";
   margin-top: 30px;
 }
-
+/* 
 .introduction__button:active {
   color: white;
 }
@@ -84,4 +88,4 @@
 .introduction__button:active::before {
   box-shadow: none;
   background-color: var(--grey);
-}
+} */
