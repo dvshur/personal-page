@@ -31,11 +31,11 @@
   box-shadow: 0 8px white, 0 16px white;
 }
 .mobile__button-close {
-  position: absolute;
+  position: fixed;
   width: 35px;
   height: 35px;
-  right: 10px;
-  top: 10px;
+  right: 20px;
+  top: 20px;
   z-index: 3;
   background-color: transparent;
 }
