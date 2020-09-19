@@ -58,7 +58,6 @@
     position: static;
     background-color: transparent;
     text-align: right;
-    padding: 0;
   }
 }
 
@@ -75,10 +74,10 @@
   .header__menu-element {
     width: unset;
     display: inline-block;
-    padding-top: 14px;
     transition: transform 0.2s linear, color 0.5s linear 0s;
     will-change: transform;
     padding-top: 0;
+    padding-left: 15px;
   }
 
   .header__menu-element:hover {
