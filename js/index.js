@@ -1,5 +1,5 @@
 var HIDDEN_CLASS = "hidden";
-var HIDDEN_M_CLASS = "visible-m";
+var VISIBLE_M_CLASS = "visible-m";
 var OVERLAY = document.querySelector(".modal__overlay");
 var MODAL_ORDER = document.querySelector(".modal_to-make-order");
 
@@ -7,7 +7,7 @@ initOpenGallery(HIDDEN_CLASS);
 
 initCallMe(HIDDEN_CLASS, OVERLAY);
 
-initMenuMobile(HIDDEN_M_CLASS);
+initMenuMobile(VISIBLE_M_CLASS);
 
 // order modal related actions
 initMakeOrder(HIDDEN_CLASS, MODAL_ORDER, OVERLAY);
@@ -111,7 +111,7 @@ function initCallMe(hiddenClass, overlay) {
   });
 }
 
-function initMenuMobile(hiddenMClass) {
+function initMenuMobile(visibleMClass) {
   var open = document.querySelector(".mobile__button");
   var close = document.querySelector(".mobile__button-close");
   var menu = document.querySelector(".header__menu");
@@ -119,23 +119,24 @@ function initMenuMobile(hiddenMClass) {
 
   open.addEventListener("click", function (evt) {
     evt.preventDefault();
-    menu.classList.remove(hiddenMClass);
-    console.log("Is this working?");
-    close.classList.remove(hiddenMClass);
+    menu.classList.remove(visibleMClass);
+    open.classList.add(visibleMClass);
+    close.classList.remove(visibleMClass);
+    console.log("close?");
   });
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    menu.classList.add(hiddenMClass);
-    close.classList.add(hiddenMClass);
-    open.classList.remove(hiddenMClass);
+    menu.classList.add(visibleMClass);
+    close.classList.add(visibleMClass);
+    open.classList.remove(visibleMClass);
   });
 
   menuElements.forEach(function (menuElement) {
     menuElement.addEventListener("click", function () {
-      menu.classList.add(hiddenMClass);
-      close.classList.add(hiddenMClass);
-      open.classList.remove(hiddenMClass);
+      menu.classList.add(visibleMClass);
+      close.classList.add(visibleMClass);
+      open.classList.remove(visibleMClass);
     });
   });
 }
