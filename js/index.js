@@ -7,7 +7,7 @@ initOpenGallery(HIDDEN_CLASS);
 
 initCallMe(HIDDEN_CLASS, OVERLAY);
 
-initMenuMobile(VISIBLE_M_CLASS);
+initMenuMobile(VISIBLE_M_CLASS, HIDDEN_CLASS);
 
 // order modal related actions
 initMakeOrder(HIDDEN_CLASS, MODAL_ORDER, OVERLAY);
@@ -111,7 +111,7 @@ function initCallMe(hiddenClass, overlay) {
   });
 }
 
-function initMenuMobile(visibleMClass) {
+function initMenuMobile(visibleMClass, hidden) {
   var open = document.querySelector(".mobile__button");
   var close = document.querySelector(".mobile__button-close");
   var menu = document.querySelector(".header__menu");
@@ -121,21 +121,21 @@ function initMenuMobile(visibleMClass) {
     evt.preventDefault();
     menu.classList.remove(visibleMClass);
     open.classList.add(visibleMClass);
-    close.classList.remove(visibleMClass);
+    close.classList.remove(hidden);
     console.log("close?");
   });
 
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     menu.classList.add(visibleMClass);
-    close.classList.add(visibleMClass);
+    close.classList.add(hidden);
     open.classList.remove(visibleMClass);
   });
 
   menuElements.forEach(function (menuElement) {
     menuElement.addEventListener("click", function () {
       menu.classList.add(visibleMClass);
-      close.classList.add(visibleMClass);
+      close.classList.add(hidden);
       open.classList.remove(visibleMClass);
     });
   });
