@@ -111,15 +111,16 @@ function initCallMe(hiddenClass, overlay) {
   });
 }
 
-function initMenuMobile(hiddenClass, hiddenMClass) {
+function initMenuMobile(hiddenClass) {
   var open = document.querySelector(".mobile__button");
   var close = document.querySelector(".mobile__button-close");
   var menu = document.querySelector(".header__menu");
+  var menuElements = document.querySelectorAll(".header__menu-element");
 
   open.addEventListener("click", function (evt) {
     evt.preventDefault();
-    menu.classList.remove(hiddenMClass);
-    open.classList.add(hiddenClass);
+    menu.classList.remove(hiddenClass);
+    console.log("Is this working?");
     close.classList.remove(hiddenClass);
   });
 
@@ -128,5 +129,13 @@ function initMenuMobile(hiddenClass, hiddenMClass) {
     menu.classList.add(hiddenMClass);
     close.classList.add(hiddenClass);
     open.classList.remove(hiddenClass);
+  });
+
+  menuElements.forEach(function (menuElement) {
+    menuElement.addEventListener("click", function () {
+      menu.classList.add(hiddenClass);
+      close.classList.add(hiddenClass);
+      open.classList.remove(hiddenClass);
+    });
   });
 }

@@ -1,4 +1,3 @@
-/* todo on wide size enlarge img */
 .header__background {
   position: relative;
   background: url("../img/background_image.jpg") no-repeat;
@@ -39,15 +38,18 @@
 }
 
 .header__menu {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 2;
-  background-color: lightgray;
-  padding: 14px;
+  background-color: black;
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
@@ -62,8 +64,7 @@
 
 .header__menu-element {
   display: block;
-  padding: 14px;
-  font-size: 17px;
+  padding: 14px 0;
   font-size: 30px;
   color: white;
   width: 100%;
@@ -79,6 +80,12 @@
     will-change: transform;
     padding-top: 0;
   }
+
+  .header__menu-element:hover {
+    transform: scale(1.1);
+    color: black;
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: 992px) {
@@ -87,18 +94,12 @@
   }
 }
 
-.header__menu-element:hover {
-  transform: scale(1.1);
-  color: black;
-  opacity: 0.8;
-}
-
 .header__button {
   position: absolute;
   z-index: 1;
   content: "";
-  bottom: 4%;
-  left: 30px;
+  bottom: 20%;
+  left: 15px;
   padding: 15px 43px;
 }
 

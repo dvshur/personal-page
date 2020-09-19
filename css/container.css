@@ -1,13 +1,13 @@
 /* xs- default */
 
 .container {
-  margin: 0 30px;
+  margin: 0 10px;
 }
 
 /* s */
 @media (min-width: 576px) {
   .container {
-    margin: 0 30px;
+    margin: 0 10px;
   }
 }
 

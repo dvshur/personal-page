@@ -50,27 +50,6 @@ body {
   background-color: #7282eb;
 }
 
-/* @media (min-width: 768px) {
-  .button {
-    padding: 5px 50px;
-  }
-} */
-
-/* .button:active {
-  color: white;
-}
-
-.button::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  background-color: lightgrey;
-}
-
 .button::before {
   position: absolute;
   content: "";
@@ -90,7 +69,7 @@ body {
 .button:active::before {
   box-shadow: none;
   background-color: var(--grey);
-} */
+}
 
 /* fonts */
 /* yanone-kaffeesatz-200 - latin_cyrillic */

@@ -95,7 +95,9 @@
   box-sizing: border-box;
   border: 2px solid lightgrey;
   border-radius: 3px;
+  text-align: center;
 }
+
 .modal__input:hover {
   border: 2px solid black;
 }
@@ -103,11 +105,12 @@
 .modal__input,
 .textarea {
   display: block;
-  padding: 13px;
   padding-left: 10px;
   box-sizing: border-box;
   outline: none;
   font-size: 19px;
+  text-align: center;
+  height: 50px;
 }
 
 .modal__input::placeholder {
