@@ -86,6 +86,7 @@
   opacity: 0.7;
 }
 
-.footer__phone {
+.footer__phone,
+.footer__mail {
   color: white;
 }
