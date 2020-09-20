@@ -95,7 +95,6 @@
   box-sizing: border-box;
   border: 2px solid lightgrey;
   border-radius: 3px;
-  text-align: center;
   line-height: 22px;
 }
 
@@ -110,7 +109,6 @@
   box-sizing: border-box;
   outline: none;
   font-size: 17px;
-  text-align: center;
   height: 50px;
   line-height: 22px;
 }
