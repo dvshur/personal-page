@@ -37,26 +37,12 @@
 .skills__heading_section {
   position: relative;
   font-family: var(--font-primary);
-  font-size: 24px;
   font-weight: normal;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 37px;
+  padding-left: 43px;
   line-height: 30px;
-}
-
-@media (min-width: 576px) {
-  .skills__heading_section {
-    font-size: 30px;
-    padding-left: 40px;
-  }
-}
-
-@media (min-width: 768px) {
-  .skills__heading_section {
-    font-size: 36px;
-    padding-left: 43px;
-  }
+  font-size: 36px;
 }
 
 @media (min-width: 992px) {

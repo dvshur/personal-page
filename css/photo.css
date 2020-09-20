@@ -70,23 +70,11 @@
 
 .photo__part-heading {
   font-family: var(--font-primary);
-  font-size: 24px;
   font-weight: normal;
-  line-height: 30px;
   padding: 0;
   padding-bottom: 10px;
-}
-
-@media (min-width: 576px) {
-  .photo__part-heading {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 768px) {
-  .photo__part-heading {
-    font-size: 36px;
-  }
+  line-height: 30px;
+  font-size: 36px;
 }
 
 @media (min-width: 1200px) {
@@ -182,7 +170,7 @@
 }
 
 .photo__desc {
-  padding: 30px 10px 5px 15px;
+  padding: 30px 10px 5px 10px;
   min-height: 155px;
 }
 

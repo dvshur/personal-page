@@ -3,7 +3,13 @@
   background: url("../img/background_image.jpg") no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  height: 800px;
+  height: 600px;
+}
+
+@media (min-width: 576px) {
+  .header__background {
+    height: 800px;
+  }
 }
 
 .header__first-row {
@@ -97,7 +103,7 @@
   position: absolute;
   z-index: 1;
   content: "";
-  bottom: 20%;
+  bottom: 25%;
   left: 15px;
   padding: 15px 43px;
 }

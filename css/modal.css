@@ -96,6 +96,7 @@
   border: 2px solid lightgrey;
   border-radius: 3px;
   text-align: center;
+  line-height: 22px;
 }
 
 .modal__input:hover {
@@ -108,16 +109,18 @@
   padding-left: 10px;
   box-sizing: border-box;
   outline: none;
-  font-size: 19px;
+  font-size: 17px;
   text-align: center;
   height: 50px;
+  line-height: 22px;
 }
 
 .modal__input::placeholder {
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: wavy;
   font-weight: 600;
   color: lightgrey;
+  line-height: 22px;
 }
 
 .modal__button-send {
