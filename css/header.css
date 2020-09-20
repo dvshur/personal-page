@@ -80,16 +80,15 @@
   .header__menu-element {
     width: unset;
     display: inline-block;
-    transition: transform 0.2s linear, color 0.5s linear 0s;
-    will-change: transform;
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+    will-change: transform, opacity;
     padding-top: 0;
     padding-left: 15px;
   }
 
   .header__menu-element:hover {
     transform: scale(1.1);
-    color: black;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
