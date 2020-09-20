@@ -103,7 +103,7 @@
   position: absolute;
   z-index: 1;
   content: "";
-  bottom: 25%;
+  bottom: 15%;
   left: 15px;
   padding: 15px 43px;
 }
